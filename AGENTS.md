@@ -36,6 +36,7 @@ One package can offer several of these; ask which the owner wants before buildin
 | Widget card | `app_features!(WIDGET)`; `api.widget(title, value)` stores text (23 B / 39 B, `\n` = 2nd line) the stub draws on a 344×166 card left of the face. A NAND write: on change, never per frame. A tap opens the app | 2026-11-15 |
 | Page | `app_features!(PAGE)`: the app is a whole screen next to the face. `api.on_page()` is `true` there; no `BUTTON` (the app never exits itself), swipe away = `PAUSE`, back = `RESUME` | 2026-11-15 |
 | Phone or Mac link | `send`/`recv`, `MESSAGE`: section "Apps that talk to a phone" below | 2026-11-13 for K |
+| Phone music remote | LVGL only: `api.media_bind(title, artist)` fills two labels with the phone's track and sends `MEDIA` (playing, available); `api.media_key(MEDIA_PLAY…MEDIA_NEXT)`; or the whole stock tile with `stock::music`. No album art, no volume level. `abi-1.4.md`, "Music" | 2026-11-16 |
 
 The user adds a widget or a page on the watch: long press on the app's row in Apps → "Add widget" / "Add page".
 Details: `app-guide.md`, "Widget" and "Page". A "full-screen widget" means a page.
