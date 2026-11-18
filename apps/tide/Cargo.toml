@@ -1,0 +1,16 @@
+[package]
+name = "tide"
+edition.workspace = true
+license.workspace = true
+version.workspace = true
+
+[dependencies]
+cmf-wp2-app.workspace = true
+cmf-wp2-ui.workspace = true
+
+[dev-dependencies]
+wp2-core.workspace = true
+
+[[bin]]
+name = "tide"
+bench = false

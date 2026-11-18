@@ -1,0 +1,6 @@
+# The app's listing in the FMC store (README.md, "store.toml"). The page's body is store.md.
+name = "Tide"
+summary = "Music remote for your phone with a drifting ocean glow"
+version = "0.1.0"
+author = "Nandhini"
+published = true

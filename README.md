@@ -11,6 +11,7 @@ An app runs on a watch with the patched firmware and the App Loader, both on the
 |---|---|
 | [`vibration-lab`](apps/vibration-lab) | A test bench for the vibration motor. The template for new apps |
 | [`ui-gallery`](apps/ui-gallery) | The stock firmware's widgets as an app can use them |
+| [`tide`](apps/tide) | Music remote for your phone with a drifting ocean glow |
 
 ## Make your own app
 
